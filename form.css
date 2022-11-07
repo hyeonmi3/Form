@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+table {
+    width: 100vw;
+    height: 100vh;
+
+    border-collapse: collapse;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th {
+    background-color: #e0e0e0b2;
+}
+
+td {
+    background-color: #ffffffb2;
+}
+
+th, td {
+    padding: 13px 20px;
+}
+
+label {
+    display: flex;
+
+    margin-bottom: 3px;
+}
+
+label > input {
+    width: 13px;
+    height: 21px;
+    
+    margin-top: 1.5px;
+}
+
+input {
+    width: 155px;
+    height: 23px;
+
+    border: 1px solid #979797b2;
+    border-radius: 1px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+th, td {
+    border: 1.5px solid #FFF;
+}
+
+.submit {
+    margin-right: 5px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit > td > input {
+    width: 80px;
+    height: 45px;
+
+    background-color: #e0e0e0b2;
+
+    border: 0;
+}

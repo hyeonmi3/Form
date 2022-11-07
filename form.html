@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>거래처 등록</title>
+    <script src="./form.js"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form onsubmit="return check()">
+        <table>
+            <tbody>
+                <tr>
+                    <th>상호명</th>
+                    <td><input type="text" id="business_name"></td>
+                </tr>
+                <tr>
+                    <th>대표자</th>
+                    <td><input type="text" id="representative"></td>
+                </tr>
+                <tr>
+                    <th>사업자 등록 번호</th>
+                    <td><input type="text" id="registration_number"></td>
+                </tr>
+                <tr>
+                    <th>대표 전화</th>
+                    <td><input type="text" id="representative_number"></td>
+                </tr>
+                <tr>
+                    <th>거래처Id</th>
+                    <td><input type="text" id="customerid"></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" id="password" placeholder="4자리 이상 입력하세요."></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td><input type="password" id="password2"></td>
+                </tr>
+                <tr>
+                    <th>분류</th>
+                    <td>
+                        <label><input type="radio" name="classification" value="대기업"/><p>대기업</p></label>
+                        <label><input type="radio" name="classification" value="중소기업" /><p>중소기업</p></label>
+                        <label><input type="radio" name="classification" value="소공상인" /><p>소공상인</p></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>개인 정보 동의</th>
+                    <td>
+                        <label><input type="radio" name="privacy_consent" value="동의함"><p>동의함</p></label>
+                        <label><input type="radio" name="privacy_consent" value="동의안함"><p>동의안함</p></label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>처리 방법</th>
+                    <td>
+                        <label><input type="radio" name="howtosave" value="즉시등록"><p>즉시등록</p></label>
+                        <label><input type="radio" name="howtosave" value="임시저장"><p>임시저장</p></label>
+                    </td>
+                </tr>
+                <tr class="submit">
+                    <td colspan="2"><input type="submit" value="등록"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
